@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesclagem de celulas</title>
+    <title>Mesclagem de celulas - desafio</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
         table {
-            /*width: 300px;
+            /*width: 500px;
             height: 100px;*/
             border-collapse: collapse ;
             position: relative;
@@ -19,7 +19,7 @@
         
         td,th {
             border: 1px solid black;
-            padding: 10px;
+            padding: 30px;
             text-align: center; /*alinhamento horizontal
             vertical-align: bottom; alinhamento vertical - top, middle ou bottom*/
         }
@@ -40,7 +40,7 @@
     </style>
 </head>
 <body>
-    <h1>Mesclagem de células</h1>
+    <h1>Mesclagem de células - desafio</h1>
     <!-- 
         Anatomia para tabelas grandes:
         TABLE = tabela
@@ -58,24 +58,31 @@
         </thead>
         <tbody>
             <tr>
-                <td>a</td>
-                <td colspan="2">b</td>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+              <td colspan="3">8</td>
+              <td>9</td>             
                 
             </tr>
             <tr>
-                <td rowspan="3">d</td>
-                <td>e</td>
-                <td rowspan="2">f</td>
-            </tr>
+                <td rowspan="2">10</td>
+                <td colspan="2">11</td>
+                <td>12</td>
+            </tr> 
             <tr>
                 
-                <td>h</td>
-                
-            </tr>
-            <tr>
-                
-                <td>l</td>
-                <td>m</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
             </tr>           
 
         </tbody>
