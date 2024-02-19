@@ -9,8 +9,8 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table {
-            width: 600px;
-            height: 100px;
+            /*width: 300px;
+            height: 100px;*/
             border-collapse: collapse ;
             
         }
@@ -22,8 +22,21 @@
             vertical-align: bottom; alinhamento vertical - top, middle ou bottom*/
         }
         thead {
-            background-color: grey;
+            background-color: rgb(61, 61, 61);
             color: white;
+        }
+        tfoot {
+            background-color: rgb(61, 61, 61);
+            color: white;
+        }
+        td.num {
+            text-align: right;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: normal;
+            padding: 5px;
+            background-color: rgba(128, 128, 128, 0.568);
         }
         
     </style>
@@ -41,51 +54,60 @@
                 TR, TD, TH
          -->
     <table>
+        <caption>Populaçao das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Unidade federativa</th>
-                <th>População Censo 2022</th>
-                <th>População Censo 2010</th>
-                <th>Mudança</th>
-                <th>% da pop.total</th>
-                <th>País comparável - habitantes</th>
+                <th scope="col" style="width: 200px;">Unidade federativa</th>
+                <th scope="col" style="width: 50px;">População Censo 2022</th>
+                <th scope="col">População Censo 2010</th>
+                <th scope="col">Mudança</th>
+                <th scope="col">% da pop.total</th>
+                <th scope="col">País comparável - habitantes</th>
             </tr>
 
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45419900</td>
-                <td>#####</td>
-                <td>#####</td>
-                <td>#####</td>
-                <td>#####</td>
+                <td class="num">45419900</td>
+                <td class="num">#####</td>
+                <td class="num">#####</td>
+                <td class="num">#####</td>
+                <td class="num">#####</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>45154225</td>
-                <td>#####</td>
-                <td>#####</td>
-                <td>#####</td>
-                <td>#####</td>
+                <td class="num">45154225</td>
+                <td class="num">#####</td>
+                <td class="num">#####</td>
+                <td class="num">#####</td>
+                <td class="num">#####</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>1455487448</td>
-                <td>#####</td>
-                <td>#####</td>
-                <td>#####</td>
-                <td>#####</td>
+                <td class="num">1455487448</td>
+                <td class="num">#####</td>
+                <td class="num">#####</td>
+                <td class="num">#####</td>
+                <td class="num">#####</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">147448</td>
+                <td class="num">#####</td>
+                <td class="num">#####</td>
+                <td class="num">#####</td>
+                <td class="num">#####</td>
             </tr>
 
         </tbody>
         <tfoot>
-            <th>Total de habitantes</th>
-            <td>150001412</td>
-            <td>#####</td>
-            <td>#####</td>
-            <td>#####</td>
-            <td>#####</td>
+            <th scope="row">Total de habitantes</th>
+            <td><strong>150001412</strong></td>
+            <td><strong>#####</strong></td>
+            <td><strong>#####</strong></td>
+            <td><strong>#####</strong></td>
+            <td><strong>#####</strong></td>
 
 
         </tfoot>
