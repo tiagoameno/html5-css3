@@ -10,26 +10,20 @@
         }
         table {
             width: 600px;
-            height: 400px;
+            height: 100px;
             border-collapse: collapse ;
             
         }
         
         td,th {
             border: 1px solid black;
-            padding: 8px;
-            text-align: center; /*alinhamento horizontal*/
-            vertical-align: bottom; /*alinhamento vertical - top, middle ou bottom*/
+            padding: 10px;
+            text-align: center; /*alinhamento horizontal
+            vertical-align: bottom; alinhamento vertical - top, middle ou bottom*/
         }
-        tr.linha {
-            background-color: aquamarine;
-        }
-        td.dado {
-            background-color: yellow;
-        }
-
-        .numero {
-            text-align: right;
+        thead {
+            background-color: grey;
+            color: white;
         }
         
     </style>
@@ -62,43 +56,39 @@
             <tr>
                 <td>São Paulo</td>
                 <td>45419900</td>
+                <td>#####</td>
+                <td>#####</td>
+                <td>#####</td>
+                <td>#####</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>45154225</td>
+                <td>#####</td>
+                <td>#####</td>
+                <td>#####</td>
+                <td>#####</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>1455487448</td>
+                <td>#####</td>
+                <td>#####</td>
+                <td>#####</td>
+                <td>#####</td>
             </tr>
 
         </tbody>
         <tfoot>
+            <th>Total de habitantes</th>
+            <td>150001412</td>
+            <td>#####</td>
+            <td>#####</td>
+            <td>#####</td>
+            <td>#####</td>
+
 
         </tfoot>
-        <tr class="linha">
-            <!-- primeira linha-->
-            <td>A1</td>
-            <td>B1</td>
-            <td class="dado">C1</td>
-        </tr>
-        <tr>
-            <!-- segunda linha-->
-            <td>A2</td>
-            <td class="numero">B2</td>
-            <td>C2</td>
-        </tr>
-        <tr>
-            <!-- terceira linha-->
-            <td>A3</td>
-            <td>B3</td>
-            <td class="numero">C3</td>
-        </tr>
-         <tr>
-            <!-- quarta linha-->
-            <td>A4</td>
-            <td>B4</td>
-            <td>C4</td>
-        </tr>
-        <tr>
-            <td>A5</td>
-        </tr>
-        <tr>
-            <td>A6</td>
-            <td>B6</td>    
-        </tr>
     </table>
     
 </body>
