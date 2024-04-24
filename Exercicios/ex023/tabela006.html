@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas responsivas</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table {
+        /*width: 500px;
+        height: 100px;*/
+        border-collapse: collapse ;
+        position: relative;
+
+        
+    }
+    
+    td,th {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+         /*alinhamento horizontal
+        vertical-align: bottom; alinhamento vertical - top, middle ou bottom*/
+    }
+    tr:nth-child(even) {
+        background-color: rgb(185, 180, 180);
+    }
+    
+    thead {
+        background-color: rgb(61, 61, 61);
+        color: white;
+
+    }       
+    caption {
+        font-size: 1.2em;
+        font-weight: normal;
+        padding: 5px;
+        background-color: rgba(128, 128, 128, 0.753);
+        color: white;
+    }
+    #container {
+        overflow-x: auto;
+        /*width: 50vw;*/
+    }
+ 
+    
+</style>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit eius, magnam laboriosam nemo corrupti, reiciendis sint aliquid aspernatur recusandae officia soluta, animi velit! Labore atque enim optio totam nihil numquam?</p>
+    
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="cnome" >
+                <col class="csexo">
+                <col class="cidade">
+                <col class="cprof">
+            </colgroup>
+            <caption>Tabelas responsivas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Produto</th>
+                    <th scope="col">jan</th>
+                    <th scope="col">fev</th>
+                    <th scope="col">mar</th>
+                    <th scope="col">abr</th>
+                    <th scope="col">mai</th>
+                    <th scope="col">jun</th>
+                    <th scope="col">jul</th>
+                    <th scope="col">ago</th>
+                    <th scope="col">set</th>
+                    <th scope="col">out</th>
+                    <th scope="col">nov</th>
+                    <th scope="col">dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>tv70'</td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>12</td>
+                    <td>33</td>
+                    <td>47</td>
+                    <td>201</td>
+                    <td>12</td>
+                    <td>35</td>
+                    <td>44</td>
+                    <td>26</td>
+                    <td>201</td>
+                    <td>304</td>
+                </tr>
+                  <tr>
+                    <td>videogame</td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>12</td>
+                  <td>33</td>
+                    <td>47</td>
+                    <td>201</td>
+                    <td>12</td>
+                    <td>35</td>
+                    <td>44</td>
+                    <td>26</td>
+                    <td>201</td>
+                    <td>304</td>
+                </tr>
+                  <tr>
+                    <td>notebook</td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>12</td>
+                    <td>33</td>
+                    <td>47</td>
+                    <td>201</td>
+                    <td>12</td>
+                    <td>35</td>
+                    <td>44</td>
+                    <td>26</td>
+                    <td>201</td>
+                    <td>304</td>
+                </tr>
+                  <tr>
+                    <td>geladeira</td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>12</td>
+                   <td>33</td>
+                    <td>47</td>
+                    <td>201</td>
+                    <td>12</td>
+                    <td>35</td>
+                    <td>44</td>
+                    <td>26</td>
+                    <td>201</td>
+                    <td>304</td>
+                </tr>
+                  <tr>
+                    <td>fogao</td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>12</td>
+                   <td>33</td>
+                    <td>47</td>
+                    <td>201</td>
+                    <td>12</td>
+                    <td>35</td>
+                    <td>44</td>
+                    <td>26</td>
+                    <td>201</td>
+                    <td>304</td>
+                </tr>
+                 <tr>
+                    <td>ar-condicionado</td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>12</td>
+                   <td>33</td>
+                    <td>47</td>
+                    <td>201</td>
+                    <td>12</td>
+                    <td>35</td>
+                    <td>44</td>
+                    <td>26</td>
+                    <td>201</td>
+                    <td>304</td>
+                </tr>
+                <tr>
+                    <td>lavalouças</td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>12</td>
+                    <td>33</td>
+                    <td>47</td>
+                    <td>201</td>
+                    <td>12</td>
+                    <td>35</td>
+                    <td>44</td>
+                    <td>26</td>
+                    <td>201</td>
+                    <td>304</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
